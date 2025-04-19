@@ -16,8 +16,8 @@ python manage.py runserver
 ### Live Api's of Authentication
 
 ## Registeration
-# Endpoint: `https://inaampython123.pythonanywhere.com/api/user/register/`
-# Method: `POST`
+# Endpoint: https://inaampython123.pythonanywhere.com/api/user/register/
+# Method: POST
 # Payload: 
 `{
     "email":"itsinaam89@gmail.com",
@@ -26,3 +26,49 @@ python manage.py runserver
     "password2":"inaam@123",
     "tc":"True"   
 }`
+
+## Login
+# Endpoint: https://inaampython123.pythonanywhere.com/api/user/login/
+# Method: POST
+# Payload: 
+`{
+    "email":"itsinaam89@gmail.com",
+    "password":"inaam@123"
+}`
+
+
+## Profile
+# Endpoint: https://inaampython123.pythonanywhere.com/api/user/profile/
+# Method: GET
+# Header: Bearer {token}
+
+
+## Change Password
+# Endpoint: https://inaampython123.pythonanywhere.com/api/user/changepassword/
+# Method: POST
+# Payload: 
+`{
+    "password":"hello",
+    "password2":"hello"
+}`
+
+
+## Send Reset Password Email
+# Endpoint: https://inaampython123.pythonanywhere.com/api/user/send-reset-password-email/
+# Method: POST
+# Payload: 
+`{
+    "email":"itsinaam89@gmail.com"
+}`
+
+
+
+## Reset Password
+# Endpoint: https://inaampython123.pythonanywhere.com/api/user/reset-password/NA/coi6if-7e209b758cfec9d334ac85d8e478a73f/
+# Method: POST
+# Payload:
+`{
+    "password":"hello123",
+    "password2":"hello123"
+}`
+
